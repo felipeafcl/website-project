@@ -2,32 +2,82 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minha Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Serviços para Sua Casa</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-900">
-  <section class="min-h-screen flex flex-col items-center justify-center p-8 text-center">
-    <h1 class="text-4xl font-bold mb-4">Transforme sua ideia em realidade</h1>
-    <p class="text-lg mb-6">Crie sua presença online com uma landing page moderna e eficaz.</p>
-    <a href="#cadastro" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Comece agora</a>
+<body class="bg-white text-gray-800">
+
+  <!-- Hero Section -->
+  <section class="bg-green-600 text-white py-16 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-bold mb-4">Serviços para sua casa com agilidade e confiança</h1>
+      <p class="text-lg mb-6">Encanamento, elétrica, pintura, jardinagem e muito mais!</p>
+      <a href="#contato" class="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">
+        Solicite um orçamento
+      </a>
+    </div>
   </section>
 
-  <section class="p-8 bg-gray-100 text-center">
-    <h2 class="text-2xl font-semibold mb-4">Por que escolher nossa solução?</h2>
-    <ul class="space-y-2">
-      <li>✅ Rápido e fácil de usar</li>
-      <li>✅ Design responsivo</li>
-      <li>✅ Otimizado para conversão</li>
-    </ul>
+  <!-- Serviços -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-10">Nossos principais serviços</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="font-semibold text-lg mb-2">Encanamento</h3>
+          <p>Manutenção, vazamentos, instalação de torneiras e muito mais.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="font-semibold text-lg mb-2">Serviços Elétricos</h3>
+          <p>Instalação de tomadas, disjuntores, chuveiros e reparos gerais.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="font-semibold text-lg mb-2">Pintura</h3>
+          <p>Renove seu ambiente com pintura profissional e materiais de qualidade.</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="font-semibold text-lg mb-2">Jardinagem</h3>
+          <p>Cuidados com seu jardim, poda, limpeza e paisagismo simples.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="cadastro" class="p-8 text-center">
-    <h2 class="text-xl font-semibold mb-4">Cadastre-se para receber novidades</h2>
-    <form class="flex flex-col items-center space-y-4">
-      <input type="email" placeholder="Seu e-mail" class="border p-2 rounded w-64" />
-      <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Enviar</button>
-    </form>
+  <!-- Depoimentos -->
+  <section class="py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-10">O que nossos clientes dizem</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded shadow text-left">
+          <p class="italic">“Chamei para arrumar um vazamento e em menos de 2h já estava resolvido. Profissionais incríveis!”</p>
+          <p class="mt-4 font-semibold">— Ana Paula, São Paulo</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow text-left">
+          <p class="italic">“Serviço rápido e bem feito. Fiz a elétrica inteira do meu apê com eles.”</p>
+          <p class="mt-4 font-semibold">— João Pedro, Campinas</p>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- Formulário de Contato -->
+  <section id="contato" class="py-16 bg-green-50">
+    <div class="container mx-auto px-4 max-w-xl text-center">
+      <h2 class="text-2xl font-bold mb-6">Solicite um orçamento gratuito</h2>
+      <form class="space-y-4 text-left">
+        <input type="text" placeholder="Seu nome" class="w-full border p-3 rounded" required>
+        <input type="email" placeholder="Seu e-mail" class="w-full border p-3 rounded" required>
+        <textarea placeholder="Descreva o serviço que você precisa" class="w-full border p-3 rounded h-32" required></textarea>
+        <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 w-full">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-800 text-white py-6 text-center text-sm">
+    © 2025 Serviços Residenciais LTDA — Todos os direitos reservados.
+  </footer>
+
 </body>
 </html>
